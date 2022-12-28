@@ -75,7 +75,7 @@
 
 // // console.log( 'final array',merageArray(user, userDetails));
 
-let arr = [2, 3,60000, 4, 5, 5, 6,10000];
+let arr = [2, 3, 60000, 4, 5, 5, 6, 10000];
 
 // // arr.forEach(el => {
 // //     console.log(el*3)
@@ -92,14 +92,14 @@ let arr = [2, 3,60000, 4, 5, 5, 6,10000];
 
 // console.log(sortArray);
 // // console.log(obj)
-function findMax(arr){
-    let len=arr.length;
-    let max=-Infinity;
-    while(len--){
-        if(arr[len]>max){
-            max=arr[len];
-        }
-    }
-    return max;
-}
-console.log(findMax(arr))
+// function findMax(arr){
+//     let len=arr.length;
+//     let max=-Infinity;
+//     while(len--){
+//         if(arr[len]>max){
+//             max=arr[len];
+//         }
+//     }
+//     return max;
+// }
+// console.log(findMax(arr))
