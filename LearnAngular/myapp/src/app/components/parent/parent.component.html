@@ -1,1 +1,7 @@
-<app-child [data]="mydata" (sendData)="recData($event)"></app-child>
+<!-- <app-child [data]="mydata" (sendData)="recData($event)"></app-child> -->
+<app-input-box
+  [data]="pplaceHolder"
+  [label]="parentLabel"
+  #value
+  (keyup)="test($event)"
+></app-input-box>

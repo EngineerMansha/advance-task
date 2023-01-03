@@ -1,2 +1,9 @@
-<p>child works!</p>
-<button (click)="sendDataF()" class="btn btn-primary">Send Data</button>
+<!-- <p>child works!</p> -->
+<app-input-box
+  [data]="placeHolderName"
+  [label]="childInput"
+  [form]="childForm"
+  [control]="'name'"
+></app-input-box>
+<!-- <button (click)="sendDataF()" class="btn btn-primary">Send Data</button> -->
+<button class="btn btn-primary" (click)="sendTest()">click</button>

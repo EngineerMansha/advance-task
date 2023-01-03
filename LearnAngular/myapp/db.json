@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "signup": [
+    
+    {
+      "name": "Muhammad Mansha",
+      "email": "manshauaf@gmail.com",
+      "password": "123",
+      "mobileNumber": "03000768751",
+      "id": 2
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -6,6 +7,11 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InputBoxComponent } from './components/input-box/input-box.component';
 
 @NgModule({
   declarations: [
@@ -13,8 +19,18 @@ import { ChildComponent } from './components/child/child.component';
     NavBarComponent,
     ParentComponent,
     ChildComponent,
+    LoginComponent,
+    SignupComponent,
+    WelcomeComponent,
+    InputBoxComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
