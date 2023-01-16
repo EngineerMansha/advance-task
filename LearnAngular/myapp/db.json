@@ -17,13 +17,40 @@
     "name": "typicode"
   },
   "signup": [
-    
     {
       "name": "Muhammad Mansha",
       "email": "manshauaf@gmail.com",
       "password": "123",
       "mobileNumber": "03000768751",
       "id": 2
+    },
+    {
+      "name": "Muhammad Mansha",
+      "email": "manshauaf@gmail.com",
+      "password": "12345",
+      "mobileNumber": "03000768751",
+      "id": 3
+    },
+    {
+      "name": "a",
+      "email": "manshauaf@gmail.com",
+      "password": "123",
+      "mobileNumber": "03000768751",
+      "id": 4
+    },
+    {
+      "name": "Muhammad Mansha",
+      "email": "mansha.com",
+      "password": "1234",
+      "mobileNumber": "1234",
+      "id": 5
+    },
+    {
+      "name": "muhammad mansha",
+      "email": "manshauaf@gmail.com",
+      "password": "123",
+      "mobileNumber": "03000768751",
+      "id": 6
     }
   ]
 }

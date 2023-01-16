@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-input-box',
@@ -11,11 +12,15 @@ export class InputBoxComponent implements OnInit {
   @Input() label: any;
   @Input() control: any;
   @Input() form: any;
+  @Output() changeInput = new EventEmitter<any>();
   placeHolder = 'Me ho place Holder';
   constructor() {}
 
   ngOnInit(): void {
     console.log(this.data);
     console.log('label', this.label);
+  }
+  sendInput(e) {
+    this.changeInput.emit(e.target.value);
   }
 }

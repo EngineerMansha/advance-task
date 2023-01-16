@@ -28,7 +28,7 @@ export class SignupComponent implements OnInit {
     console.log('submit Data', e);
     this._http.post<any>('http://localhost:3000/signup', e).subscribe((res) => {
       console.log(res);
-      alert('All is Done');
+      alert('Your Account is created Please login With Email and Password');
       this.route.navigate(['/login']);
     });
   }

@@ -1,4 +1,9 @@
 <div [formGroup]="form">
   <label for="">{{ label }}</label>
-  <input type="text" [placeholder]="data" [formControlName]="control" />
+  <input
+    type="text"
+    [placeholder]="data"
+    [formControlName]="control"
+    (keyup)="sendInput($event)"
+  />
 </div>

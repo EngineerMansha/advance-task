@@ -1,5 +1,10 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-child',
@@ -22,8 +27,14 @@ export class ChildComponent implements OnInit {
     this.childForm = this.fb.group({
       name: ['', Validators.required],
     });
+    // this.childForm = new FormGroup({
+    //   name: new FormControl(''),
+    // });
   }
   sendTest() {
     console.log('childInput', this.childForm.value);
+  }
+  inputboxData(e) {
+    console.log('input live data', e);
   }
 }

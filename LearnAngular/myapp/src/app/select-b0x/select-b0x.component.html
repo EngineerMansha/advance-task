@@ -1,0 +1,5 @@
+<select [(ngModel)]="selectedOption" (ngModelChange)="onOptionChange()">
+  <option *ngFor="let option of data" [value]="option.id">
+    {{ option.name }}
+  </option>
+</select>

@@ -4,6 +4,7 @@
   [label]="childInput"
   [form]="childForm"
   [control]="'name'"
+  (changeInput)="inputboxData($event)"
 ></app-input-box>
 <!-- <button (click)="sendDataF()" class="btn btn-primary">Send Data</button> -->
 <button class="btn btn-primary" (click)="sendTest()">click</button>

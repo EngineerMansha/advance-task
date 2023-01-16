@@ -12,6 +12,8 @@ import { SignupComponent } from './components/signup/signup.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputBoxComponent } from './components/input-box/input-box.component';
+import { SelectB0xComponent } from './select-b0x/select-b0x.component';
+import { SubjectTestComponent } from './components/subject-test/subject-test.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { InputBoxComponent } from './components/input-box/input-box.component';
     SignupComponent,
     WelcomeComponent,
     InputBoxComponent,
+    SelectB0xComponent,
+    SubjectTestComponent,
   ],
   imports: [
     BrowserModule,
