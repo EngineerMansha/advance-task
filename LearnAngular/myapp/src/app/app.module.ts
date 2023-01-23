@@ -14,6 +14,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputBoxComponent } from './components/input-box/input-box.component';
 import { SelectB0xComponent } from './select-b0x/select-b0x.component';
 import { SubjectTestComponent } from './components/subject-test/subject-test.component';
+import { Comp1Component } from './components/comp1/comp1.component';
+import { Comp2Component } from './components/comp2/comp2.component';
+import { Comp3Component } from './components/comp3/comp3.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { SubjectTestComponent } from './components/subject-test/subject-test.com
     InputBoxComponent,
     SelectB0xComponent,
     SubjectTestComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
   ],
   imports: [
     BrowserModule,
