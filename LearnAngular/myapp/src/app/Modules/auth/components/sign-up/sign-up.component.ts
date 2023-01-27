@@ -1,14 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.css'],
+  selector: 'app-sign-up',
+  templateUrl: './sign-up.component.html',
+  styleUrls: ['./sign-up.component.css'],
 })
-export class SignupComponent implements OnInit {
+export class SignUpComponent implements OnInit {
   sigupform!: FormGroup;
   constructor(
     private fb: FormBuilder,
@@ -26,10 +26,14 @@ export class SignupComponent implements OnInit {
   }
   signupSubmit(e) {
     console.log('submit Data', e);
-    this._http.post<any>('http://localhost:3000/signup', e).subscribe((res) => {
+    this._http.post<any>('http://localhost:3000/users', e).subscribe((res) => {
       console.log(res);
       alert('Your Account is created Please login With Email and Password');
-      this.route.navigate(['/login']);
+      this.route.navigate(['auth/login']);
     });
+  }
+  nevigateRoute() {
+    this.route.navigate(['auth/login']);
+    console.log('click on login Achar Tag');
   }
 }

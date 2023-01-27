@@ -30,6 +30,7 @@ export class AppComponent {
       dept: 'software',
     },
   ];
+  id: number = 50;
   constructor() {
     console.log(this.box1);
   }

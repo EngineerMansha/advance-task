@@ -6,7 +6,7 @@ import { StudentAppComponent } from './student-app.component';
 
 const routes: Routes = [
   {
-    path: 'student/:id',
+    path: 'student',
     component: StudentAppComponent,
     children: [
       {

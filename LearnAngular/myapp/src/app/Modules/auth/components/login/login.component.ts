@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     });
   }
   login() {
-    this.http.get<any>('http://localhost:3000/signup').subscribe((res) => {
+    this.http.get<any>('http://localhost:3000/users').subscribe((res) => {
       const user = res.find((a: any) => {
         return (
           a.email === this.loginForm.value.email &&
@@ -33,12 +33,20 @@ export class LoginComponent implements OnInit {
       if (user) {
         console.log('login_User', user);
         alert('Email and Password Match');
-        this.router.navigate(['/navbar']);
+        this.router.navigate(['/dashboard']);
       } else {
         alert('Email and passsword Not match');
-        this.router.navigate(['/login']);
+        this.router.navigate(['auth/login']);
       }
     });
     console.log(this.loginForm.value);
+  }
+  nevigateRoute(e: string) {
+    if (e === 'signup') {
+      this.router.navigate(['auth/signup']);
+    }
+    if (e === 'forget') {
+      this.router.navigate(['auth/forget']);
+    }
   }
 }

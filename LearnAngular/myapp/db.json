@@ -16,7 +16,7 @@
   "profile": {
     "name": "typicode"
   },
-  "signup": [
+  "users": [
     {
       "name": "Muhammad Mansha",
       "email": "manshauaf@gmail.com",
@@ -51,6 +51,20 @@
       "password": "123",
       "mobileNumber": "03000768751",
       "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "Welcome@1",
+      "mobileNumber": "sam@gccjo.com",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "Welcome@1",
+      "mobileNumber": "sam@gccjo.com",
+      "id": 8
     }
   ]
 }
